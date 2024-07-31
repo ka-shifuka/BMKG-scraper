@@ -1,9 +1,11 @@
 {
-	"name": "BMKG-Scraper",
+	"name": "bmkg-scraper",
 	"version": "1.0.0",
 	"description": "BMKG Scraper mengambil data dari bmkg dengan mudah",
 	"main": "src/index.js",
-	"scripts": {},
+	"scripts": {
+		"test": "mocha --timeout 5000"
+	},
 	"keywords": [
 		"BMKG",
 		"Scraper",
@@ -16,5 +18,9 @@
 		"axios": "^1.7.2",
 		"cheerio": "1.0.0-rc.12"
 	},
-	"type": "module"
+	"type": "module",
+	"devDependencies": {
+		"chai": "^5.1.1",
+		"mocha": "^10.7.0"
+	}
 }
