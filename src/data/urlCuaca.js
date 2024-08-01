@@ -1,17 +1,17 @@
 export default {
 	profinsi: {
 		dkiJakarta:
-			'https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?&Prov=DKI_Jakarta&AreaID=501195',
-		aceh: 'https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Prov=Aceh&AreaID=501397',
+			"https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Prov=DKI_Jakarta",
+		aceh: "https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Prov=Aceh",
 		kepBangkaBelitung:
-			'https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Prov=Kep_Bangka_Belitung&AreaID=501365',
+			"https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Prov=Kep_Bangka_Belitung",
 		yogyakarta:
-			'https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Prov=DI_Yogyakarta&AreaID=501190',
+			"https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Prov=DI_Yogyakarta",
 		gorontalo:
-			'https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Prov=Gorontalo&AreaID=501197',
+			"https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Prov=Gorontalo",
 		jawaBarat:
-			'https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Prov=Jawa_Barat&AreaID=501212',
+			"https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Prov=Jawa_Barat",
 		jawaTimur:
-			'https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Prov=Jawa_Timur&AreaID=501306'
+			"https://www.bmkg.go.id/cuaca/prakiraan-cuaca.bmkg?Prov=Jawa_Timur"
 	}
 };
