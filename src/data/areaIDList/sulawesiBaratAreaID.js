@@ -1,0 +1,90 @@
+const sulawesiBaratAreaID = {
+	kabMajene: {
+		majene: "501483",
+		tammerodoSendana: "5013111",
+		pamboang: "5013095",
+		banggae: "5013067",
+		tuboSendana: "5013122",
+		ulumanda: "5013123",
+		malunda: "5013084",
+		banggaeTimur: "5013068",
+		sendana: "5013105"
+	},
+	kabMamasa: {
+		sumarorong: "5013108",
+		sesenaPadang: "5013106",
+		rantebulahanTimur: "5013101",
+		pana: "5013096",
+		nosu: "5013094",
+		messawa: "5013093",
+		"mamasa": "5013085",
+		tabang: "5013109",
+		tabulahan: "5013110",
+		mamasa: "501484",
+		bandaraSumarorong: "5013125",
+		tawalian: "5013116",
+		aralle: "5013061",
+		mambi: "5013086",
+		bambang: "5013066",
+		balla: "5013063",
+		tandukKalua: "5013112"
+	},
+	kabMamuju: {
+		simkep: "5013107",
+		"mamuju": "5013087",
+		bandaraTampaPadang: "5013126",
+		tommo: "5013120",
+		tapalangBarat: "5013114",
+		papalang: "5013098",
+		tapalang: "5013113",
+		sampaga: "5013102",
+		kalumpang: "5013079",
+		bonehau: "5013071",
+		mamuju: "501485",
+		kalukku: "5013078"
+	},
+	kabMamujuTengah: {
+		pangale: "5013097",
+		budongbudong: "5013072",
+		karossa: "5013080",
+		tobadak: "5013119",
+		mamujuTengah: "1200113",
+		topoyo: "5013088"
+	},
+	kabMamujuUtara: {
+		pedongga: "5013099",
+		tikkeRaya: "5013117",
+		baras: "5013069",
+		bambalamotu: "5013065",
+		bambaira: "5013064",
+		mamujuUtara: "501486",
+		buluTaba: "5013074",
+		sarudu: "5013104",
+		sarjo: "5013103",
+		duripoku: "5013077",
+		lariang: "5013081",
+		dapurang: "5013076",
+		pasangkayu: "5013089"
+	},
+	kabPolewaliMandar: {
+		polewaliMandar: "501487",
+		limboro: "5013082",
+		wonomulyo: "5013124",
+		matakali: "5013091",
+		matangnga: "5013092",
+		tinambung: "5013118",
+		tubbiTaramanu: "5013121",
+		allu: "5013059",
+		bulo: "5013073",
+		campalagian: "5013075",
+		balanipa: "5013062",
+		binuang: "5013070",
+		polewali: "5013100",
+		mapilli: "5013090",
+		anreapi: "5013060",
+		tapango: "5013115",
+		luyo: "5013083"
+	}
+};
+
+export default sulawesiBaratAreaID;

@@ -9,6 +9,7 @@ function cuacaScraper(htmlData) {
 		let temperature = $(el).find("h2.heading-md").text();
 		let humidityElement = $(el).find('p:contains("%")');
 		let humidity = humidityElement.text();
+		let weather = $(el).find("div.kiri p").text();
 
 		let windElement = $(el).find('p:contains("km/jam")');
 		let windText = windElement.text();
@@ -22,16 +23,54 @@ function cuacaScraper(htmlData) {
 		humidity = humidity == "" ? null : humidity;
 		windSpeed = windSpeed == "" ? null : windSpeed;
 		windDirection = windDirection == "" ? null : windDirection;
+		weather = weather == "" ? null : weather;
 
 		arrayData.push({
 			time,
 			temperature,
 			humidity,
 			windSpeed: windSpeed + " km/jam",
-			windDirection
+			windDirection,
+			weather
 		});
 	});
-	return arrayData;
+
+	const images = [];
+	$("#klimatologi img").each((i, img) => {
+		const alt = $(img).attr("alt");
+		const dataOriginal = $(img).attr("data-original");
+		images.push(dataOriginal);
+	});
+
+	const $serviceBlock = $(".service-block").first();
+	const weatherNow = {
+		temperature: $serviceBlock.find(".heading-md").text(),
+		humidity: $serviceBlock
+			.find('p:contains("Kelembapan Udara")')
+			.text()
+			.replace("Kelembapan Udara: ", ""),
+		windSpeed: $serviceBlock
+			.find('p:contains("Kec. Angin")')
+			.text()
+			.replace("Kec. Angin: ", "")
+			.replace("&nbsp;km/jam", " km/jam"),
+		windDirection: $serviceBlock
+			.find('p:contains("Arah Angin dari")')
+			.text()
+			.replace("Arah Angin dari: ", ""),
+		weather: $serviceBlock.find("div").first().find("p").text()
+	};
+
+	weatherNow.temperature =
+		weatherNow.temperature == "" ? null : weatherNow.temperature;
+	weatherNow.humidity = weatherNow.humidity == "" ? null : weatherNow.humidity;
+	weatherNow.windSpeed =
+		weatherNow.windSpeed == "" ? null : weatherNow.windSpeed;
+	weatherNow.windDirection =
+		weatherNow.windDirection == "" ? null : weatherNow.windDirection;
+	weatherNow.weather = weatherNow.weather == "" ? null : weatherNow.weather;
+
+	return { weatherNow, dataWeather: arrayData, images: images };
 }
 
 export { cuacaScraper };
