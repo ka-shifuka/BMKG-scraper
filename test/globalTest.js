@@ -1,9 +1,13 @@
-import { Cuaca } from "../src/index.js";
-import { areaID } from "../src/index.js";
+import { BMKGWeather, BMKGEarthquake } from "../src/index.js";
+
 
 (async function () {
-	const cuaca = new Cuaca();
-	const dataCuaca = await cuaca.ntb();
+  const weather = new BMKGWeather();
+  const jakartaWeather = await weather.dkiJakarta();
+  console.log(jakartaWeather);
 
-	console.log(dataCuaca);
+   const earthquake = new BMKGEarthquake();
+  const listEarthquake = await earthquake.list();
+  console.log(listEarthquake);
 })();
+

@@ -1,22 +1,25 @@
 {
-	"name": "bmkg-scraper",
-	"version": "1.0.0",
-	"description": "BMKG Scraper mengambil data dari bmkg dengan mudah",
-	"main": "src/index.js",
-	"scripts": {
-		"test": "mocha --timeout 5000"
-	},
-	"keywords": [
-		"BMKG",
-		"Scraper",
-		"cuaca",
-		"gempa"
-	],
-	"author": "ka-shifuka",
-	"license": "MIT",
-	"dependencies": {
-		"axios": "^1.7.2",
-		"cheerio": "1.0.0-rc.12"
-	},
-	"type": "module"
+  "name": "bmkg-scraper",
+  "version": "1.0.1-beta-cuaca-only-tester-only",
+  "description": "BMKG Scraper mengambil data dari bmkg dengan mudah",
+  "main": "src/index.js",
+  "scripts": {
+		"test": "node test/globalTest.js"
+  },
+  "keywords": [
+    "BMKG",
+    "Scraper",
+    "cuaca",
+    "gempa"
+  ],
+  "author": "ka-shifuka",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cheerio": "1.0.0-rc.12"
+  },
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
 }

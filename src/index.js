@@ -1,4 +1,6 @@
-import { Cuaca } from "./lib/cuaca.js";
-import { areaID } from "./data/areaIDList/listAll.js";
+import { Weather as BMKGWeather } from "./lib/weather.js";
+import { Earthquake as BMKGEarthquake } from "./lib/earthquake.js";
+import { areaID as BMKGAreaID } from "./data/areaIDList/listAll.js";
 
-export { Cuaca ,areaID};
+
+export { BMKGAreaID, BMKGWeather ,BMKGEarthquake };
