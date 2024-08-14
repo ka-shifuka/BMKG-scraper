@@ -23,3 +23,5 @@ import { BMKGEarthquake, BMKGWeather, BMKGAreaID } from "../src/index.js";
   console.log(listEarthquake);
 })();
 ```
+
+for more information about BMKGAreaID see [areaid](https://github.com/ka-shifuka/BMKG-scraper/tree/main/src/data/areaIDList)
