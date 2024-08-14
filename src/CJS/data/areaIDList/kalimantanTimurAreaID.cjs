@@ -1,0 +1,133 @@
+const kalimantanTimurAreaID = {
+	kabBerau: {
+		telukBayur: "5011696",
+		pulauDerawan: "5011687",
+		batuPutih: "5011689",
+		biatan: "5011690",
+		bidukBiduk: "5011691",
+		gunungTabur: "5011692",
+		sambaliung: "5011693",
+		segah: "5011694",
+		talisayan: "5011695",
+		maratua: "5011686",
+		dermagaTanjungBatu: "1100142",
+		tanjungRedeb: "501358",
+		tabalar: "5011688",
+		kelay: "5011685"
+	},
+	kabKutaiBarat: {
+		sekolahDarat: "5011710",
+		siluqNgurai: "5011711",
+		muaraPahu: "5011702",
+		barongTongkok: "5011703",
+		jempang: "5011704",
+		linggangBigung: "5011705",
+		mookManaarBulatn: "5011706",
+		muaraLawa: "5011707",
+		nyutan: "5011708",
+		penyinggahan: "5011709",
+		loraIram: "5011700",
+		damai: "5011699",
+		bongan: "5011698",
+		bentianBesar: "5011697",
+		tering: "5011712",
+		melak: "5011701",
+		sendawar: "501355"
+	},
+	kabKutaiKartanegara: {
+		kembangJanggut: "5011719",
+		kenohan: "5011720",
+		kotaBangun: "5011721",
+		loaJanan: "5011722",
+		muaraWis: "5011726",
+		loaKulu: "5011723",
+		tenggarongSeberang: "5011729",
+		sangaSanga: "5011728",
+		samboja: "5011727",
+		muaraKaman: "5011725",
+		marangKayu: "5011724",
+		anggana: "5011718",
+		tabang: "5011717",
+		sebulu: "5011716",
+		muaraMuntai: "5011715",
+		muaraJawa: "5011714",
+		muaraBadak: "5011713",
+		tenggarong: "501361"
+	},
+	kabKutaiTimur: {
+		kaubun: "5011740",
+		busang: "5011739",
+		bengalon: "5011738",
+		sangkulirang: "5011737",
+		longMesangat: "5011741",
+		muaraBengkal: "5011742",
+		rantauPulung: "5011743",
+		sanggatanUtara: "5011744",
+		sanggattaSelatan: "5011745",
+		telen: "5011746",
+		sandaran: "5011736",
+		muaraWahau: "5011735",
+		muaraAncalong: "5011734",
+		sengata: "501356",
+		telukPandan: "5011747",
+		batuAmpar: "5011730",
+		kaliorang: "5011731",
+		karangan: "5011732",
+		kongbeng: "5011733"
+	},
+	kabMahakamUlu: {
+		longApari: "5011748",
+		laham: "5011750",
+		longHubung: "5011751",
+		longPahangai: "5011752",
+		longBagun: "5011749"
+	},
+	kabPaser: {
+		muaraSamu: "5011759",
+		tanjungHarapan: "5011761",
+		pasirBelengkong: "5011760",
+		longKali: "5011758",
+		longIkis: "5011757",
+		kuaro: "5011756",
+		batuEngau: "5011755",
+		muaraKoman: "5011754",
+		batuSopang: "5011753"
+	},
+	kabPasir: "501357",
+	kabPenajamPaserUtara: {
+		sepaku: "5011763",
+		babulu: "5011762",
+		penajam: "501353",
+		waru: "5011764"
+	},
+	kotaBalikpapan: {
+		balikpapanBarat: "5011767",
+		balikpapanSelatan: "5011768",
+		balikpapanTengah: "5011769",
+		balikpapanKota: "5011765",
+		balikpapanTimur: "5011766",
+		balikpapan: "501349",
+		balikpapanUtara: "5011770"
+	},
+	kotaBontang: {
+		bontangBarat: "5011772",
+		bontangUtara: "5011773",
+		bontangSelatan: "5011771",
+		bontang: "501350"
+	},
+	kotaSamarinda: {
+		samarindaUtara: "5011782",
+		samarindaUlu: "5011781",
+		samarindaSeberang: "5011780",
+		samarindaKota: "5011779",
+		samarindaIlir: "5011778",
+		palaran: "5011777",
+		sungaiPinang: "5011776",
+		sungaiKunjang: "5011775",
+		loaJananIlir: "5011774",
+		samarinda: "501354",
+		sambutan: "5011783"
+	}
+};
+
+module.exports =  kalimantanTimurAreaID;

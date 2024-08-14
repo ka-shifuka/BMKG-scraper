@@ -1,19 +1,17 @@
-import { BMKGEarthquake, BMKGWeather, BMKGAreaID } from "../src/index.js";
-
+import { BMKGEarthquake, BMKGWeather, BMKGAreaID } from "bmkg-scraper";
 
 (async function () {
-  try {
+  try { 
+    const weather = new BMKGWeather();
+    const ponorogo = BMKGAreaID.jawaTimur.kabPonorogo.ponorogo;
 
-  const weather = new BMKGWeather();
-  const ponorogo = BMKGAreaID.jawaTimur.kabPonorogo.ponorogo;
+    const ponorogoWheather = await weather.jawaTimur(ponorogo);
+    console.log(ponorogoWheather);
 
-  const ponorogoWheather = await weather.jawaTimur(ponorogo);
-  console.log(ponorogoWheather);
-
-  const earthquake = new BMKGEarthquake();
-  const listEarthquake = await earthquake.list();
-  console.log(listEarthquake);
+    const earthquake = new BMKGEarthquake();
+    const listEarthquake = await earthquake.list();
+    console.log(listEarthquake);
   } catch(e) {
-    console.log("error", e)
+    console.log("error", e);
   }
 })();
