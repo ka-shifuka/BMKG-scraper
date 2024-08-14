@@ -1,6 +1,6 @@
 {
   "name": "bmkg-scraper",
-  "version": "1.0.202.CJS",
+  "version": "1.0.202",
   "description": "BMKG Scraper mengambil data dari bmkg dengan mudah",
   "main": "src/index.cjs",
   "module": "src/index.js",
