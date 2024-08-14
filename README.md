@@ -25,3 +25,7 @@ import { BMKGEarthquake, BMKGWeather, BMKGAreaID } from "../src/index.js";
 ```
 
 for more information about BMKGAreaID see [areaid](https://github.com/ka-shifuka/BMKG-scraper/tree/main/src/data/areaIDList)
+
+
+### info
+this package is under development more features in the future
