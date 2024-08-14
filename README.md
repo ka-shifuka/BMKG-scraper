@@ -12,15 +12,19 @@ how to use it
 import { BMKGEarthquake, BMKGWeather, BMKGAreaID } from "bmkg-scraper";
 
 (async function () {
-  const weather = new BMKGWeather();
-  const ponorogo = BMKGAreaID.jawaTimur.kabPonorogo.ponorogo;
+  try { 
+    const weather = new BMKGWeather();
+    const ponorogo = BMKGAreaID.jawaTimur.kabPonorogo.ponorogo;
 
-  const ponorogoWheather = await weather.jawaTimur(ponorogo);
-  console.log(ponorogoWheather);
+    const ponorogoWheather = await weather.jawaTimur(ponorogo);
+    console.log(ponorogoWheather);
 
-  const earthquake = new BMKGEarthquake();
-  const listEarthquake = await earthquake.list();
-  console.log(listEarthquake);
+    const earthquake = new BMKGEarthquake();
+    const listEarthquake = await earthquake.list();
+    console.log(listEarthquake);
+  } catch(e) {
+    console.log("error", e);
+  }
 })();
 ```
 
