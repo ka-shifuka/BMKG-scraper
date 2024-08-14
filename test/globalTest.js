@@ -1,13 +1,13 @@
-import { BMKGWeather, BMKGEarthquake } from "../src/index.js";
-
+import { BMKGEarthquake, BMKGWeather, BMKGAreaID } from "../src/index.js";
 
 (async function () {
   const weather = new BMKGWeather();
-  const jakartaWeather = await weather.dkiJakarta();
-  console.log(jakartaWeather);
+  const ponorogo = BMKGAreaID.jawaTimur.kabPonorogo.ponorogo;
 
-   const earthquake = new BMKGEarthquake();
+  const ponorogoWheather = await weather.jawaTimur(ponorogo);
+  console.log(ponorogoWheather);
+
+  const earthquake = new BMKGEarthquake();
   const listEarthquake = await earthquake.list();
   console.log(listEarthquake);
 })();
-

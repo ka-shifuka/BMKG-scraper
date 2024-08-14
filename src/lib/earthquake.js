@@ -1,6 +1,5 @@
-import axios from "axios";
-
 import { gempaScraper } from "../utils/scraperModule.js";
+import axios from "axios";
 
 const url = "https://www.bmkg.go.id/gempabumi-terkini.html";
 
@@ -25,15 +24,15 @@ class Earthquake {
 
   async now() {
     const rawData = await axios.get(url, { headers: this.headers });
-    const data = gempaScraper(rawData.data);
 
+    const data = gempaScraper(rawData.data);
     return data[0];
   }
 
   async list() {
     const rawData = await axios.get(url, { headers: this.headers });
-    const data = gempaScraper(rawData.data);
 
+    const data = gempaScraper(rawData.data);
     return data;
   }
 }
