@@ -9,7 +9,7 @@ npm install bmkg-scraper
 
 how to use it 
 ```javascript
-import { BMKGEarthquake, BMKGWeather, BMKGAreaID } from "../src/index.js";
+import { BMKGEarthquake, BMKGWeather, BMKGAreaID } from "bmkg-scraper";
 
 (async function () {
   const weather = new BMKGWeather();
