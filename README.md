@@ -33,3 +33,5 @@ for more information about BMKGAreaID see [areaid](https://github.com/ka-shifuka
 
 ### info
 this package is under development more features in the future
+### note
+this only work on nodejs 18+
