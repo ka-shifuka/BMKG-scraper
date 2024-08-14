@@ -1,10 +1,12 @@
 {
   "name": "bmkg-scraper",
-  "version": "1.0.202",
+  "version": "1.0.202.CJS",
   "description": "BMKG Scraper mengambil data dari bmkg dengan mudah",
-  "main": "src/index.js",
+  "main": "src/index.cjs",
+  "module": "src/index.js",
   "scripts": {
-		"test": "node test/globalTest.js"
+		"test": "node test/globalTest.js",
+    "cjs":"node test/cjs.js"
   },
   "keywords": [
     "BMKG",
@@ -18,7 +20,13 @@
     "axios": "^1.7.2",
     "cheerio": "1.0.0-rc.12"
   },
-  "type": "module",
+  "type":"module",
+  "exports": {
+    ".": {
+      "require": "./src/index.cjs",
+      "import": "./src/index.js"
+    }
+  },
   "devDependencies": {
     "prettier": "^3.3.3"
   }

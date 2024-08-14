@@ -1,8 +1,12 @@
-import { BMKGEarthquake, BMKGWeather, BMKGAreaID } from "../src/index.js";
+const { BMKGWeather, BMKGAreaID } = require("../src/index.cjs");
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
 
-let prov = 'jawaTimur';
-let kab = 'kabPonorogo'
-let kec = 'ponorogo';
+let prov = 'jawaTengah';
+let kab = 'kabKudus';
+let kec = 'kudus';
+
 
 async function getWeather(prov, kab, kec) {
   try { 
