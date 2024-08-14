@@ -1,12 +1,4 @@
-const { BMKGWeather, BMKGAreaID } = require("../src/index.cjs");
-function capitalize(str) {
-  return str.charAt(0).toUpperCase() + str.slice(1);
-}
-
-let prov = 'jawaTengah';
-let kab = 'kabKudus';
-let kec = 'kudus';
-
+const { BMKGEarthquake, BMKGWeather, BMKGAreaID } = require("bmkg-scraper");
 
 async function getWeather(prov, kab, kec) {
   try { 
@@ -20,4 +12,19 @@ async function getWeather(prov, kab, kec) {
   }
 };
 
+async function getEarthquake() {
+ try {
+   const earthquake = new BMKGEarthquake();
+    const listEarthquake = await earthquake.list();
+    console.log(listEarthquake);
+  } catch(e) {
+    console.log("error", e);
+  }
+}
+
+let prov = 'jawaTimur';
+let kab = 'kabPonorogo';
+let kec = 'ponorogo';
+
 getWeather(prov, kab, kec); 
+getEarthquake();

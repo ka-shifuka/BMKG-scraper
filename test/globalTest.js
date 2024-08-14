@@ -1,19 +1,17 @@
-import { BMKGEarthquake, BMKGWeather, BMKGAreaID } from "../src/index.js";
+import { BMKGEarthquake, BMKGWeather, BMKGAreaID } from "bmkg-scraper";
 
-let prov = 'jawaTimur';
-let kab = 'kabPonorogo'
-let kec = 'ponorogo';
-
-async function getWeather(prov, kab, kec) {
+(async function () {
   try { 
-    let weather = new BMKGWeather();
-    let queries = BMKGAreaID[prov][kab][kec];
-    let data = await weather[prov](queries);
-    console.log(data);
+    const weather = new BMKGWeather();
+    const ponorogo = BMKGAreaID.jawaTimur.kabPonorogo.ponorogo;
 
+    const ponorogoWheather = await weather.jawaTimur(ponorogo);
+    console.log(ponorogoWheather);
+
+    const earthquake = new BMKGEarthquake();
+    const listEarthquake = await earthquake.list();
+    console.log(listEarthquake);
   } catch(e) {
     console.log("error", e);
   }
-};
-
-getWeather(prov, kab, kec); 
+})();
