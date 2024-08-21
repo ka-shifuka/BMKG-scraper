@@ -8,10 +8,9 @@ import { BMKGEarthquake, BMKGWeather, BMKGAreaID } from "bmkg-scraper";
     const ponorogoWheather = await weather.jawaTimur(ponorogo);
     console.log(ponorogoWheather);
 
-    const earthquake = new BMKGEarthquake();
-    const listEarthquake = await earthquake.list();
-    console.log(listEarthquake);
-  } catch(e) {
+    const earthquake = new BMKGEarthquake()
+    const earthquakeList = await earthquake.list()
+  }catch(e){
     console.log("error", e);
   }
 })();

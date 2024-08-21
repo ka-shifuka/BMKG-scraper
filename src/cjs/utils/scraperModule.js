@@ -80,12 +80,12 @@ function gempaScraper(html) {
   $("tbody tr").each((index, element) => {
     const $row = $(element);
     const data = {
-      waktuGempa: $row.find("td:nth-child(2)").text(),
-      lintang: $row.find("td:nth-child(3)").text(),
-      bujur: $row.find("td:nth-child(4)").text(),
-      magnitudo: $row.find("td:nth-child(5)").text(),
-      kedalaman: $row.find("td:nth-child(6)").text(),
-      wilayah: $row.find("td:nth-child(7)").text(),
+      time: $row.find("td:nth-child(2)").text(),
+      latitude: $row.find("td:nth-child(3)").text(),
+      longitude: $row.find("td:nth-child(4)").text(),
+      magnitude: $row.find("td:nth-child(5)").text(),
+      depth: $row.find("td:nth-child(6)").text(),
+      region: $row.find("td:nth-child(7)").text(),
     };
     earthquakeData.push(data);
   });

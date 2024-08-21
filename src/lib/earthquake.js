@@ -3,6 +3,9 @@ import axios from "axios";
 
 const url = "https://www.bmkg.go.id/gempabumi-terkini.html";
 
+/**
+ * @class Earthquake
+ */
 class Earthquake {
   headers = {
     accept:
@@ -22,6 +25,11 @@ class Earthquake {
       "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36",
   };
 
+  /**
+   *
+   * @returns 
+   * @memberof Earthquake
+   */
   async now() {
     const rawData = await axios.get(url, { headers: this.headers });
 
@@ -29,6 +37,11 @@ class Earthquake {
     return data[0];
   }
 
+  /**
+   *
+   * @returns
+   * @memberof Earthquake
+   */
   async list() {
     const rawData = await axios.get(url, { headers: this.headers });
 

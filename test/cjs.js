@@ -1,5 +1,11 @@
 const { BMKGEarthquake, BMKGWeather, BMKGAreaID } = require("bmkg-scraper");
 
+
+/**
+ * @param {string} prov - nama provinsi
+ * @param {string} kab - nama kabupaten
+ * @param {string} kec - nama kecamatam
+ */
 async function getWeather(prov, kab, kec) {
   try { 
     let weather = new BMKGWeather();
@@ -28,3 +34,5 @@ let kec = 'ponorogo';
 
 getWeather(prov, kab, kec); 
 getEarthquake();
+
+getWeather()
