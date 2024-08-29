@@ -10,6 +10,7 @@ import { BMKGEarthquake, BMKGWeather, BMKGAreaID } from "bmkg-scraper";
 
     const earthquake = new BMKGEarthquake()
     const earthquakeList = await earthquake.list()
+    console.log(earthquakeList)
   }catch(e){
     console.log("error", e);
   }
